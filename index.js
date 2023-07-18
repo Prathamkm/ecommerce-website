@@ -1,11 +1,15 @@
 const express = require("express");
 const server = express();
 const mongoose = require("mongoose");
+const productsRouters = require("./routes/Products");
+
+server.use(express.json()); // to parse re.body
+server.use("/products", productsRouters.router);
 
 main().catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/test");
+  await mongoose.connect("mongodb://127.0.0.1:27017/ecommerce");
 }
 server.get("/", (req, res) => {
   res.json({ status: "success" });
