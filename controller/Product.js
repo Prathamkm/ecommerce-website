@@ -43,4 +43,25 @@ exports.fetchAllProducts = async (req, res) => {
     res.status(400).json(error);
   }
 };
-//7:48
+
+exports.fetchProductsById = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const product = await Product.findById(id);
+    res.status(200).json(product);
+  } catch (error) {
+    res.status(400).json(error);
+  }
+};
+
+exports.updateProduct = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const product = await Product.findByIdAndUpdate(id, req.body, {
+      new: true,
+    });
+    res.status(200).json(product);
+  } catch (error) {
+    res.status(400).json(error);
+  }
+};
