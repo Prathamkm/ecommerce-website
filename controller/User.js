@@ -18,7 +18,7 @@ exports.updateUser = async (req, res) => {
       new: true,
     });
     res.status(200).json(user);
-  } catch (error) {
-    res.status(400).json(error);
+  } catch (err) {
+    res.status(400).json(err);
   }
 };
