@@ -1,4 +1,4 @@
-const { Category } = require("../model/Category");
+const { Category } = require('../model/Category');
 
 exports.fetchCategories = async (req, res) => {
   try {
@@ -14,7 +14,10 @@ exports.createCategory = async (req, res) => {
   try {
     const doc = await category.save();
     res.status(201).json(doc);
-  } catch (error) {
-    res.status(400).json(error);
+  } catch (err) {
+    res.status(400).json(err);
   }
 };
+
+
+

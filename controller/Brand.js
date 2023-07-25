@@ -1,4 +1,4 @@
-const { Brand } = require("../model/Brand");
+const { Brand } = require('../model/Brand');
 
 exports.fetchBrands = async (req, res) => {
   try {
@@ -14,7 +14,7 @@ exports.createBrand = async (req, res) => {
   try {
     const doc = await brand.save();
     res.status(201).json(doc);
-  } catch (error) {
-    res.status(400).json(error);
+  } catch (err) {
+    res.status(400).json(err);
   }
 };

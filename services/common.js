@@ -1,7 +1,7 @@
-const passport = require("passport");
+const passport = require('passport');
 
 exports.isAuth = (req, res, done) => {
-  return passport.authenticate("jwt");
+  return passport.authenticate('jwt');
 };
 
 exports.sanitizeUser = (user) => {
@@ -11,10 +11,9 @@ exports.sanitizeUser = (user) => {
 exports.cookieExtractor = function (req) {
   let token = null;
   if (req && req.cookies) {
-    token = req.cookies["jwt"];
+    token = req.cookies['jwt'];
   }
   //TODO : this is temporary token for testing without cookie
-  token =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YmRkMWIyMGQ5NTU4NDhmNjc3N2NlZiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjkwMTYxNTg2fQ.7BIV7rvdiB3QT5jrVWUuuQ8hvMEOMtKf27-u7I5xf0I";
+  // token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWJmNzViOWI3OWFkMTNiMTUxNWQ0MCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjgzNzQ4ODY3fQ.DyMEFgayuvUGrzvPHIxmCJWi4xstvp4hR-dRSBjRNhE"
   return token;
 };
