@@ -2424,27 +2424,6 @@
       "quantity": 1,
       "user": 2,
       "id": 1
-    },
-    {
-      "title": "printed high quality T shirts",
-      "description": "Brand: vintage Apparel ,Export quality",
-      "price": 35,
-      "discountPercentage": 7.54,
-      "rating": 4.89,
-      "stock": 6,
-      "brand": "Vintage Apparel",
-      "category": "mens-shirts",
-      "thumbnail": "https://i.dummyjson.com/data/products/53/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/53/1.webp",
-        "https://i.dummyjson.com/data/products/53/2.jpg",
-        "https://i.dummyjson.com/data/products/53/3.jpg",
-        "https://i.dummyjson.com/data/products/53/4.jpg",
-        "https://i.dummyjson.com/data/products/53/thumbnail.jpg"
-      ],
-      "quantity": 1,
-      "user": 1,
-      "id": 2
     }
   ],
   "orders": [
@@ -3143,71 +3122,6 @@
       },
       "status": "pending",
       "id": 11
-    },
-    {
-      "items": [
-        {
-          "title": "printed high quality T shirts",
-          "description": "Brand: vintage Apparel ,Export quality",
-          "price": 35,
-          "discountPercentage": 7.54,
-          "rating": 4.89,
-          "stock": 6,
-          "brand": "Vintage Apparel",
-          "category": "mens-shirts",
-          "thumbnail": "https://i.dummyjson.com/data/products/53/thumbnail.jpg",
-          "images": [
-            "https://i.dummyjson.com/data/products/53/1.webp",
-            "https://i.dummyjson.com/data/products/53/2.jpg",
-            "https://i.dummyjson.com/data/products/53/3.jpg",
-            "https://i.dummyjson.com/data/products/53/4.jpg",
-            "https://i.dummyjson.com/data/products/53/thumbnail.jpg"
-          ],
-          "quantity": 2,
-          "user": 1,
-          "id": 2
-        }
-      ],
-      "totalAmount": 64,
-      "totalItems": 2,
-      "user": {
-        "email": "test@gmail.com",
-        "password": "Qwerty123",
-        "role": "user",
-        "addresses": [
-          {
-            "name": "Abhishek Rathore",
-            "email": "test@gmail.com",
-            "phone": "1234567788",
-            "street": "11th Main",
-            "city": "Banaglore",
-            "state": "Karnataka",
-            "pinCode": "560034"
-          },
-          {
-            "name": "Jack Morris",
-            "email": "jack@gmail.com",
-            "city": "Delhi",
-            "state": "Delhi",
-            "pinCode": "110006",
-            "phone": "12312331232",
-            "street": "12th cross"
-          }
-        ],
-        "id": 1
-      },
-      "paymentMethod": "card",
-      "selectedAddress": {
-        "name": "Abhishek Rathore",
-        "email": "test@gmail.com",
-        "phone": "1234567788",
-        "street": "11th Main",
-        "city": "Banaglore",
-        "state": "Karnataka",
-        "pinCode": "560034"
-      },
-      "status": "pending",
-      "id": 12
     }
   ]
 }
